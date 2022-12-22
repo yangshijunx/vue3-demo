@@ -15,12 +15,13 @@
     "lint:stylelint": "stylelint --cache --fix \"**/*.{vue,css,scss,postcss,less}\" --cache --cache-location node_modules/.cache/stylelint/"
   },
   "dependencies": {
+    "axios": "^1.2.1",
     "element-plus": "^2.2.27",
     "path": "^0.12.7",
     "pinia": "^2.0.28",
     "vue": "^3.2.45",
-    "vue-router": "^4.1.6",
-    "axios": "^1.2.1"
+    "vue-demi": "^0.13.11",
+    "vue-router": "^4.1.6"
   },
   "devDependencies": {
     "@rushstack/eslint-patch": "^1.1.4",
