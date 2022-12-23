@@ -45,4 +45,4 @@ npm run build
 npm run lint
 ```
 
-vue3-ts-基础模板
+vue3-ts 基础模板
