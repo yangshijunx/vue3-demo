@@ -21,6 +21,12 @@ If the standalone TypeScript plugin doesn't feel fast enough to you, Volar has a
 
 See [Vite Configuration Reference](https://vitejs.dev/config/).
 
+## 初始化仓库
+
+```sh
+git init
+```
+
 ## Project Setup
 
 ```sh
