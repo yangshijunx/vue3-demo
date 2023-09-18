@@ -1,6 +1,7 @@
 <script setup lang="ts">
-import { RouterLink, RouterView } from "vue-router";
-import HelloWorld from "./components/HelloWorld.vue";
+import { RouterView } from "vue-router";
+import MenuList from "@/views/menuList/index.vue";
+// import HelloWorld from "./components/HelloWorld.vue";
 import icon from "@/assets/logo.svg";
 console.log("运行的模式", import.meta.env.MODE);
 console.log("部署应用时的基本url", import.meta.env.BASE_URL);
@@ -13,25 +14,7 @@ console.log(icon);
 </script>
 
 <template>
-  <header>
-    <img
-      alt="Vue logo"
-      class="logo"
-      src="@/assets/logo.svg"
-      width="125"
-      height="125"
-    />
-
-    <div class="wrapper">
-      <HelloWorld msg="You did it!" />
-
-      <nav>
-        <RouterLink to="/">Home</RouterLink>
-        <RouterLink to="/about">About</RouterLink>
-      </nav>
-    </div>
-  </header>
-
+  <MenuList />
   <RouterView />
 </template>
 
