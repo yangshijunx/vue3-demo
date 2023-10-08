@@ -44,11 +44,11 @@ export default ({ command, mode }: ConfigEnv): UserConfigExport => {
       host: "0.0.0.0",
       // 本地跨域代理
       proxy: {
-        // "/api": {
-        //   target: "",
-        //   changeOrigin: true,
-        //   rewrite: path => path.replace(/^\/api/, "")
-        // }
+        "/api": {
+          target: "",
+          changeOrigin: true,
+          rewrite: path => path.replace(/^\/api/, "http://127.0.0.1:3000")
+        }
       }
     },
     plugins: getPluginsList(command, VITE_CDN, VITE_COMPRESSION),
